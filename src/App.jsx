@@ -14,31 +14,33 @@ function App() {
       const times = {};
 
       let start = performance.now();
+      // console.log("start", start)
       results.sha256 = SHA256(input).toString(enc.Hex);
-      times.sha256 = (performance.now() - start).toFixed(2);
+      times.sha256 = performance.now() - start;
 
       start = performance.now();
       results.sha3_256 = SHA3(input, { outputLength: 256 }).toString(enc.Hex);
-      times.sha3_256 = (performance.now() - start).toFixed(2);
+      times.sha3_256 = performance.now() - start;
 
       start = performance.now();
       results.blake2b = await blake2b(input);
-      times.blake2b = (performance.now() - start).toFixed(2);
+      times.blake2b = performance.now() - start;
 
       start = performance.now();
       results.blake3 = await blake3(input);
-      times.blake3 = (performance.now() - start).toFixed(2);
+      times.blake3 = performance.now() - start;
 
       start = performance.now();
       results.ripemd160 = RIPEMD160(input).toString(enc.Hex);
-      times.ripemd160 = (performance.now() - start).toFixed(2);
+      times.ripemd160 = performance.now() - start;
 
       start = performance.now();
       results.whirlpool = await whirlpool(input);
-      times.whirlpool = (performance.now() - start).toFixed(2);
+      times.whirlpool = performance.now() - start;
 
       setHashes(results);
       setTimings(times);
+      // console.log("times", times)
     };
 
     computeHashes();
@@ -87,7 +89,7 @@ function App() {
           {Object.entries(timings).map(([label, time]) => (
             <tr key={label}>
               <td className="border px-4 py-2">{label.toUpperCase().replace("_", "-")}</td>
-              <td className="border px-4 py-2">{time}</td>
+              <td className="border px-4 py-2">{time.toFixed(10)}</td>
             </tr>
           ))}
         </tbody>
@@ -101,7 +103,7 @@ function HashRow({ label, hash, time, onCopy, copied }) {
     <div>
       <div className="flex items-center justify-between">
         <p className="font-bold text-lg">
-          {label} <span className="text-sm text-gray-500">({time} ms)</span>
+          {label} <span className="text-sm text-gray-500">({time?.toFixed(10)} ms)</span>
         </p>
         <button
           onClick={onCopy}
