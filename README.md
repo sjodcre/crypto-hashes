@@ -1,12 +1,90 @@
-# React + Vite
+# 🔐 Crypto Hash Demo (React + JS + Tailwind)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern web application that demonstrates how popular cryptographic hash functions work — live in your browser. It includes real-time hash generation, algorithm performance comparison, and educational documentation for each algorithm.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔄 Live text input + file upload (max 50KB)
+- 💡 Hash results from:
+  - SHA-256
+  - SHA3-256
+  - BLAKE2b
+  - BLAKE3
+  - RIPEMD-160
+  - Whirlpool
+- ⏱️ Per-algorithm benchmark timings
+- 📋 Copy-to-clipboard for each hash
+- 📚 Educational markdown pages per algorithm
+- 🖼️ Nice clean UI with Tailwind CSS
 
-## Expanding the ESLint configuration
+## 🧰 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [react-router-dom](https://reactrouter.com/)
+- [crypto-js](https://www.npmjs.com/package/crypto-js)
+- [hash-wasm](https://www.npmjs.com/package/hash-wasm)
+- [react-markdown](https://github.com/remarkjs/react-markdown)
+- [rehype-highlight](https://github.com/rehypejs/rehype-highlight)
+- [remark-gfm](https://github.com/remarkjs/remark-gfm)
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/your-username/crypto-hash-demo-js.git
+cd crypto-hash-demo-js
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the Dev Server
+
+```bash
+npm run dev
+```
+
+App should now be running at [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 📁 Directory Structure
+
+```bash
+/public
+  └── content/       # Markdown files for algorithm info
+    ├── sha256.md
+    ├── sha3-256.md
+    ├── blake2b.md
+    ├── blake3.md
+    ├── ripemd160.md
+    └── whirlpool.md
+/src
+  ├── pages/         # Algorithm detail page component
+  │   └── AlgoPage.jsx
+  ├── App.jsx        # Main demo UI
+  ├── Router.jsx     # React router setup
+  └── main.jsx       # Entry file
+```
+
+## 🧪 Usage
+
+1. Type text or upload a `.txt`, `.json`, `.md`, etc. file (max 50KB).
+2. View hashes and computation times.
+3. Click any algorithm name to view its description.
+
+## 💡 Future Improvements
+
+- Add animated visualization per algorithm
+- Add hash history and export
+- Add unit tests for core hashing logic
+
+## 📜 License
+
+MIT © 2025 Sam Oma
