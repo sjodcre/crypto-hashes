@@ -49,7 +49,20 @@ function Markdown({ content }) {
   const [ReactMarkdown, setReactMarkdown] = useState(null);
 
   useEffect(() => {
-    import('react-markdown').then((mod) => setReactMarkdown(() => mod.default));
+    // import('react-markdown').then((mod) => setReactMarkdown(() => mod.default));
+    Promise.all([
+        import('react-markdown'),
+        import('remark-gfm'),
+        import('rehype-highlight')
+      ]).then(([rm, gfm, hl]) => {
+        setReactMarkdown(() => (props) => (
+          <rm.default
+            remarkPlugins={[gfm.default]}
+            rehypePlugins={[hl.default]}
+            {...props}
+          />
+        ));
+      });
   }, []);
 
   return ReactMarkdown ? <ReactMarkdown>{content}</ReactMarkdown> : <p>Loading...</p>;
