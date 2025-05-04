@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { SHA256, SHA3, RIPEMD160, enc } from "crypto-js";
 import { blake2b, blake3, whirlpool } from "hash-wasm";
+import { Link } from "react-router-dom";
+
 
 function App() {
   const [input, setInput] = useState("Hello, World!");
@@ -89,42 +91,42 @@ function App() {
             className="block w-full border border-gray-300 p-2 rounded shadow-sm"
           /> */}
           <div className="relative">
-  <label className="block w-full">
-    <div className="cursor-pointer border border-gray-300 rounded p-3 shadow-sm bg-white hover:bg-slate-50 text-gray-700 text-sm font-mono">
-      {/* {selectedFileName || "Choose a file (Max 50KB)"} */}
-      {selectedFileName
-  ? `${selectedFileName} (${(selectedFileSize / 1024).toFixed(2)} KB)`
-  : "Choose a file (Max 50KB)"}
-    </div>
-    <input
-      type="file"
-      accept=".txt,.json,.csv,.xml,.html,.md,.js,.ts,.py"
-      onChange={(e) => {
-        const file = e.target.files?.[0];
-        if (!file) return;
-        if (file.size > 50 * 1024) {
-          alert("File too large. Max 50KB.");
-          return;
-        }
+            <label className="block w-full">
+              <div className="cursor-pointer border border-gray-300 rounded p-3 shadow-sm bg-white hover:bg-slate-50 text-gray-700 text-sm font-mono">
+                {/* {selectedFileName || "Choose a file (Max 50KB)"} */}
+                {selectedFileName
+                  ? `${selectedFileName} (${(selectedFileSize / 1024).toFixed(2)} KB)`
+                  : "Choose a file (Max 50KB)"}
+              </div>
+              <input
+                type="file"
+                accept=".txt,.json,.csv,.xml,.html,.md,.js,.ts,.py"
+                onChange={(e) => {
+                  const file = e.target.files?.[0];
+                  if (!file) return;
+                  if (file.size > 50 * 1024) {
+                    alert("File too large. Max 50KB.");
+                    return;
+                  }
 
-        setSelectedFileName(file.name);
-        setSelectedFileSize(file.size);
+                  setSelectedFileName(file.name);
+                  setSelectedFileSize(file.size);
 
 
-        const reader = new FileReader();
-        reader.onload = () => {
-          if (typeof reader.result === "string") {
-            setInput(reader.result);
-          } else {
-            alert("Unsupported file format.");
-          }
-        };
-        reader.readAsText(file);
-      }}
-      className="hidden"
-    />
-  </label>
-</div>
+                  const reader = new FileReader();
+                  reader.onload = () => {
+                    if (typeof reader.result === "string") {
+                      setInput(reader.result);
+                    } else {
+                      alert("Unsupported file format.");
+                    }
+                  };
+                  reader.readAsText(file);
+                }}
+                className="hidden"
+              />
+            </label>
+          </div>
 
           <p className="text-sm text-gray-500 text-center">
             Accepted file types: .txt, .json, .csv, .xml, .html, .md, .js, .ts, .py — Max 50KB
@@ -155,7 +157,12 @@ function App() {
           <tbody>
             {Object.entries(timings).map(([label, time]) => (
               <tr key={label} className="even:bg-slate-50">
-                <td className="border px-4 py-2 font-semibold">{label.toUpperCase().replace("_", "-")}</td>
+                {/* <td className="border px-4 py-2 font-semibold">{label.toUpperCase().replace("_", "-")}</td> */}
+                <td className="border px-4 py-2 font-semibold">
+                  <Link to={`/algo/${label.toLowerCase()}`} className="text-blue-600 hover:underline">
+                    {label.toUpperCase().replace("_", "-")}
+                  </Link>
+                </td>
                 <td className="border px-4 py-2">{time.toFixed(10)}</td>
               </tr>
             ))}
@@ -170,9 +177,13 @@ function HashRow({ label, hash, time, onCopy, copied }) {
   return (
     <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
       <div className="flex items-center justify-between mb-2">
-        <p className="font-semibold text-lg text-slate-700">
+        {/* <p className="font-semibold text-lg text-slate-700">
           {label} <span className="text-sm text-gray-500">({time?.toFixed(10)} ms)</span>
-        </p>
+        </p> */}
+        <Link to={`/algo/${label.toLowerCase()}`} className="font-semibold text-lg text-blue-600 hover:underline">
+          {label}
+        </Link>
+        <span className="text-sm text-gray-500">({time?.toFixed(10)} ms)</span>
         <button
           onClick={onCopy}
           className="text-sm text-blue-600 hover:underline"
