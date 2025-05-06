@@ -1,12 +1,12 @@
-# SHA-256 for Everyone
+# Whirlpool for Everyone
 
-Imagine a machine that gives a secret fingerprint to any file or message. That’s SHA-256.
+Whirlpool is like a **big blender** for information. It takes any message and mixes it into a long, 512-bit fingerprint.
 
-- Change one letter, the fingerprint changes completely.
-- No way to go backwards and figure out what was put in.
-- It’s safe, fast, and trusted by banks and cryptocurrencies.
+- Even a tiny change in the input changes the whole fingerprint
+- It’s not as popular as others, but it’s **still secure**
+- Great for verifying big documents or protecting important data
 
-It helps check for tampering, protect passwords, and verify things haven’t been changed.
+Whirlpool works best when you need a **very strong, long hash**.
 
 ---
 

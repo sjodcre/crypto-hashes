@@ -1,13 +1,13 @@
-# SHA-256 for Students
+# RIPEMD-160 for Students
 
-SHA-256 is a cryptographic hash function. Think of it like a digital fingerprint machine:
+RIPEMD-160 is a cryptographic hash from the 1990s — older, but still in use, especially in Bitcoin.
 
-- You enter any message
-- It outputs a 64-character code (256 bits)
-- Even a single letter change creates a totally different hash
-- You can’t reverse it or guess the input from the output
+### Features:
+- 160-bit output (smaller than SHA)
+- Uses two parallel compression paths for better mixing
+- Still secure enough for some use, but not recommended for new systems
 
-It's commonly used in security systems, Bitcoin, and verifying files.
+💡 It’s mostly known for one job: generating **Bitcoin addresses**.
 
 ---
 

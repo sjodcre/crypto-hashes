@@ -1,13 +1,15 @@
-# SHA-256 for Students
+# BLAKE2b for Students
 
-SHA-256 is a cryptographic hash function. Think of it like a digital fingerprint machine:
+BLAKE2b is a super-efficient cryptographic hash function.
 
-- You enter any message
-- It outputs a 64-character code (256 bits)
-- Even a single letter change creates a totally different hash
-- You can’t reverse it or guess the input from the output
+### Why It’s Cool:
 
-It's commonly used in security systems, Bitcoin, and verifying files.
+- Faster than SHA-256
+- Shorter, more flexible output sizes
+- Still secure — no known attacks
+- Based on the same math as ChaCha/Salsa ciphers
+
+It’s often used in password hashing, file checksums, and apps that need **speed + security**.
 
 ---
 

@@ -1,28 +1,27 @@
-# SHA-256 for Engineers
+# BLAKE3 for Engineers
 
-SHA-256 is a member of the SHA-2 family, designed by the NSA and standardized by NIST.
+BLAKE3 is a cryptographic hash function designed to be **faster** and more **parallelizable** than its predecessors.
 
 ## Technical Specs
 
-- Output: 256-bit hash (32 bytes)
-- Block size: 512 bits
-- Construction: Merkle–Damgård using Davies–Meyer
-- Rounds: 64
-- Secure as of 2025
+- Output: 256-bit (by default)
+- Structure: Merkle tree
+- Core: Based on BLAKE2s’s compression function
+- Deterministic and extendable output (XOF)
+- SIMD and multithread friendly
 
-## Algorithm Steps
+## Highlights
 
-1. Pad message to 512-bit blocks
-2. Initialize eight 32-bit working variables
-3. For each block, run 64 rounds using bitwise ops and modular math
-4. Concatenate output from internal state
+- 3x–7x faster than SHA-256 in practice
+- Uses tree hashing for parallelism
+- Stateless API: no context needed between calls
+- Highly efficient in WASM and embedded systems
 
-## Use Cases
+## When to Use It
 
-- Digital signatures
-- SSL/TLS
-- Bitcoin mining
-- File verification
+- Hashing large files
+- Multi-core processing
+- Verifying assets in real-time
 
 ---
 

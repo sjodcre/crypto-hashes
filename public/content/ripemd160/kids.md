@@ -1,17 +1,16 @@
-# SHA-256 for Kids
+# RIPEMD-160 for Kids
 
-SHA-256 is like a magic sticker machine! 🎩
+RIPEMD-160 is like a **pirate’s old map**! 🏴‍☠️🗺️
 
-- You put in a word or secret...
-- It gives you a long, secret code!
-- If you change even one letter, the code changes completely!
-- But you can’t figure out what was put in just by looking at the code — it’s magic!
+- It makes a code from your message
+- If you change the message, you get a brand new map!
+- Pirates (and computers) use it to find treasure 🪙
 
-People use SHA-256 to lock up their secrets and check if anything changed without asking.
+RIPEMD-160 is not the newest or fastest, but it’s still used for special secrets — like Bitcoin treasure chests!
 
 ---
 
-## 🔍 How Does SHA-256 Compare?
+## 🔍 How Does RIPEMD-160 Compare?
 
 | Hash Name   | What It Feels Like                  | Speed     | Special Power         |
 |-------------|--------------------------------------|-----------|------------------------|

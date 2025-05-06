@@ -1,17 +1,16 @@
-# SHA-256 for Kids
+# BLAKE2b for Kids
 
-SHA-256 is like a magic sticker machine! 🎩
+BLAKE2b is like a **rocket-powered code printer**! 🚀
 
-- You put in a word or secret...
-- It gives you a long, secret code!
-- If you change even one letter, the code changes completely!
-- But you can’t figure out what was put in just by looking at the code — it’s magic!
+- You put in your message
+- It zips and zooms to make a secret code super fast!
+- If you change just one word, the code changes a lot
 
-People use SHA-256 to lock up their secrets and check if anything changed without asking.
+It’s faster than many other machines and still keeps secrets really well! 💨✨
 
 ---
 
-## 🔍 How Does SHA-256 Compare?
+## 🔍 How Does BLAKE2b Compare?
 
 | Hash Name   | What It Feels Like                  | Speed     | Special Power         |
 |-------------|--------------------------------------|-----------|------------------------|

@@ -1,12 +1,12 @@
-# SHA-256 for Everyone
+# RIPEMD-160 for Everyone
 
-Imagine a machine that gives a secret fingerprint to any file or message. That’s SHA-256.
+RIPEMD-160 is like a **classic lock** — not the newest, but still trusted in a few places.
 
-- Change one letter, the fingerprint changes completely.
-- No way to go backwards and figure out what was put in.
-- It’s safe, fast, and trusted by banks and cryptocurrencies.
+- It gives a short 160-bit code for any message
+- You can’t reverse it or guess it
+- It’s best known for securing **Bitcoin wallet addresses**
 
-It helps check for tampering, protect passwords, and verify things haven’t been changed.
+While newer methods are faster and stronger, RIPEMD-160 is still in use for legacy systems.
 
 ---
 

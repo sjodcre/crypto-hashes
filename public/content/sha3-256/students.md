@@ -1,13 +1,14 @@
-# SHA-256 for Students
+# SHA3-256 for Students
 
-SHA-256 is a cryptographic hash function. Think of it like a digital fingerprint machine:
+SHA3-256 is a next-generation hash function based on the Keccak algorithm.
 
-- You enter any message
-- It outputs a 64-character code (256 bits)
-- Even a single letter change creates a totally different hash
-- You can’t reverse it or guess the input from the output
+Unlike SHA-2, it uses a **sponge construction**, where:
 
-It's commonly used in security systems, Bitcoin, and verifying files.
+- Input is "absorbed" into a large state
+- The state is transformed using bitwise logic and permutations
+- Output is "squeezed" from the state
+
+It’s flexible, modern, and designed to resist future attacks — including some **quantum computing threats**.
 
 ---
 

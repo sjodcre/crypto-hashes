@@ -1,28 +1,22 @@
-# SHA-256 for Engineers
+# BLAKE2b for Engineers
 
-SHA-256 is a member of the SHA-2 family, designed by the NSA and standardized by NIST.
+BLAKE2b is a high-speed cryptographic hash optimized for 64-bit platforms.
 
 ## Technical Specs
 
-- Output: 256-bit hash (32 bytes)
-- Block size: 512 bits
-- Construction: Merkle–Damgård using Davies–Meyer
-- Rounds: 64
-- Secure as of 2025
+- Output: 1–64 bytes (default 512-bit)
+- Internal state: 8×64-bit words
+- Compression function: Modified ChaCha (add–rotate–xor)
+- Structure: HAIFA
+- Optional keyed mode for MAC usage
 
-## Algorithm Steps
+## Why Use It?
 
-1. Pad message to 512-bit blocks
-2. Initialize eight 32-bit working variables
-3. For each block, run 64 rounds using bitwise ops and modular math
-4. Concatenate output from internal state
+- Faster than SHA-2 and SHA-3
+- No collisions, side-channel resistant
+- Widely used in libsodium, Argon2, etc.
 
-## Use Cases
-
-- Digital signatures
-- SSL/TLS
-- Bitcoin mining
-- File verification
+BLAKE2b is often considered a **secure drop-in replacement** for SHA-2, with better performance and flexibility.
 
 ---
 

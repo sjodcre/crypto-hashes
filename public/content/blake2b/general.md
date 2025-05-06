@@ -1,12 +1,12 @@
-# SHA-256 for Everyone
+# BLAKE2b for Everyone
 
-Imagine a machine that gives a secret fingerprint to any file or message. That’s SHA-256.
+BLAKE2b is a modern and super fast way to turn your files or passwords into **secret-looking codes**.
 
-- Change one letter, the fingerprint changes completely.
-- No way to go backwards and figure out what was put in.
-- It’s safe, fast, and trusted by banks and cryptocurrencies.
+- It’s faster than SHA-256
+- It’s very secure
+- It’s flexible — you can control the size of the output
 
-It helps check for tampering, protect passwords, and verify things haven’t been changed.
+It’s used in apps, password managers, and software tools because it saves time **without sacrificing safety**.
 
 ---
 

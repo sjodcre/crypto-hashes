@@ -1,17 +1,17 @@
-# SHA-256 for Kids
+# BLAKE3 for Kids
 
-SHA-256 is like a magic sticker machine! 🎩
+BLAKE3 is like a super-fast robot with many arms! 🤖⚡
 
-- You put in a word or secret...
-- It gives you a long, secret code!
-- If you change even one letter, the code changes completely!
-- But you can’t figure out what was put in just by looking at the code — it’s magic!
+- It eats your message really fast!
+- It has lots of robot arms working together at once 🤯
+- Each time you give it something, it gives a special code sticker
+- Even if you change one little thing, the sticker changes totally
 
-People use SHA-256 to lock up their secrets and check if anything changed without asking.
+It’s one of the fastest sticker-makers ever made! 🚀✨
 
 ---
 
-## 🔍 How Does SHA-256 Compare?
+## 🔍 How Does BLAKE3 Compare?
 
 | Hash Name   | What It Feels Like                  | Speed     | Special Power         |
 |-------------|--------------------------------------|-----------|------------------------|

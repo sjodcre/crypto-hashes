@@ -1,17 +1,18 @@
-# SHA-256 for Kids
+# SHA3-256 for Kids
 
-SHA-256 is like a magic sticker machine! 🎩
+SHA3-256 is a **sponge machine**! 🧽✨
 
-- You put in a word or secret...
-- It gives you a long, secret code!
-- If you change even one letter, the code changes completely!
-- But you can’t figure out what was put in just by looking at the code — it’s magic!
+- You pour in your message like water into a sponge
+- It squishes and mixes everything inside
+- Then it squeezes out a special secret code!
 
-People use SHA-256 to lock up their secrets and check if anything changed without asking.
+Even if you change just one letter, it makes a totally different secret code!
+
+People use SHA3-256 to make super safe codes that are **hard to break**.
 
 ---
 
-## 🔍 How Does SHA-256 Compare?
+## 🔍 How Does SHA3-256 Compare?
 
 | Hash Name   | What It Feels Like                  | Speed     | Special Power         |
 |-------------|--------------------------------------|-----------|------------------------|

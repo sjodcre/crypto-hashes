@@ -1,13 +1,14 @@
-# SHA-256 for Students
+# Whirlpool for Students
 
-SHA-256 is a cryptographic hash function. Think of it like a digital fingerprint machine:
+Whirlpool is a cryptographic hash function that gives you a **very large 512-bit output**.
 
-- You enter any message
-- It outputs a 64-character code (256 bits)
-- Even a single letter change creates a totally different hash
-- You can’t reverse it or guess the input from the output
+### Key Points
 
-It's commonly used in security systems, Bitcoin, and verifying files.
+- Based on block cipher design (similar to AES)
+- Produces huge hashes, useful when **longer digests** are needed
+- Secure, but not as widely adopted as others
+
+It’s great for **archiving**, **file integrity**, or **backups**.
 
 ---
 

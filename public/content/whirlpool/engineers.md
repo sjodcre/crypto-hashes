@@ -1,28 +1,21 @@
-# SHA-256 for Engineers
+# Whirlpool for Engineers
 
-SHA-256 is a member of the SHA-2 family, designed by the NSA and standardized by NIST.
+Whirlpool is a 512-bit cryptographic hash based on an AES-like block cipher.
 
 ## Technical Specs
 
-- Output: 256-bit hash (32 bytes)
+- Output: 512-bit
 - Block size: 512 bits
-- Construction: Merkle–Damgård using Davies–Meyer
-- Rounds: 64
-- Secure as of 2025
+- Structure: Miyaguchi–Preneel with AES-like operations
+- Permutation: 10 rounds of S-box, ShiftRow, MixColumn, AddRoundKey
 
-## Algorithm Steps
+## Highlights
 
-1. Pad message to 512-bit blocks
-2. Initialize eight 32-bit working variables
-3. For each block, run 64 rounds using bitwise ops and modular math
-4. Concatenate output from internal state
+- ISO/IEC 10118-3 standard
+- Resistant to known preimage/collision attacks
+- Suitable for archival and checksum validation
 
-## Use Cases
-
-- Digital signatures
-- SSL/TLS
-- Bitcoin mining
-- File verification
+Whirlpool is ideal when high entropy and long digests are required, though it’s not as mainstream.
 
 ---
 

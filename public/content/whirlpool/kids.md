@@ -1,17 +1,16 @@
-# SHA-256 for Kids
+# Whirlpool for Kids
 
-SHA-256 is like a magic sticker machine! 🎩
+Whirlpool is like a **magical cooking pot**! 🧙‍♂️🌀
 
-- You put in a word or secret...
-- It gives you a long, secret code!
-- If you change even one letter, the code changes completely!
-- But you can’t figure out what was put in just by looking at the code — it’s magic!
+- You drop in your message
+- It spins, mixes, and stirs everything super well
+- Then it gives you a very big, special secret code! ✨
 
-People use SHA-256 to lock up their secrets and check if anything changed without asking.
+Even if you change just one word, it makes a **totally different code**. It’s good for hiding big secrets!
 
 ---
 
-## 🔍 How Does SHA-256 Compare?
+## 🔍 How Does Whirlpool Compare?
 
 | Hash Name   | What It Feels Like                  | Speed     | Special Power         |
 |-------------|--------------------------------------|-----------|------------------------|

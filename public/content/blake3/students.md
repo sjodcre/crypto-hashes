@@ -1,13 +1,15 @@
-# SHA-256 for Students
+# BLAKE3 for Students
 
-SHA-256 is a cryptographic hash function. Think of it like a digital fingerprint machine:
+BLAKE3 is a modern cryptographic hash function built for speed, parallelism, and efficiency.
 
-- You enter any message
-- It outputs a 64-character code (256 bits)
-- Even a single letter change creates a totally different hash
-- You can’t reverse it or guess the input from the output
+### Key Traits:
 
-It's commonly used in security systems, Bitcoin, and verifying files.
+- 256-bit output (by default)
+- Incredibly fast — even faster than BLAKE2 or SHA-2
+- Built to support multi-threading and SIMD instructions
+- Designed using a Merkle tree structure
+
+BLAKE3 is perfect when you need fast hashing at scale — like verifying huge files, syncing data, or working across cores.
 
 ---
 

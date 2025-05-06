@@ -1,12 +1,13 @@
-# SHA-256 for Everyone
+# SHA3-256 for Everyone
 
-Imagine a machine that gives a secret fingerprint to any file or message. That’s SHA-256.
+SHA3-256 is a newer version of SHA, built differently under the hood.
 
-- Change one letter, the fingerprint changes completely.
-- No way to go backwards and figure out what was put in.
-- It’s safe, fast, and trusted by banks and cryptocurrencies.
+- It works like a sponge: it absorbs your message and squeezes out a fingerprint
+- It's designed to be even more secure than SHA-256
+- It's slower, but stronger in some cases
+- Great for long-term future-proofing
 
-It helps check for tampering, protect passwords, and verify things haven’t been changed.
+SHA3 is newer, safer, and becoming more common for advanced security needs.
 
 ---
 

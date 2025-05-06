@@ -1,28 +1,20 @@
-# SHA-256 for Engineers
+# RIPEMD-160 for Engineers
 
-SHA-256 is a member of the SHA-2 family, designed by the NSA and standardized by NIST.
+RIPEMD-160 is a 160-bit hash function designed in 1996 as a strengthened version of RIPEMD.
 
-## Technical Specs
+## Technical Details
 
-- Output: 256-bit hash (32 bytes)
+- Digest size: 160 bits
 - Block size: 512 bits
-- Construction: Merkle–Damgård using Davies–Meyer
-- Rounds: 64
-- Secure as of 2025
+- Construction: Merkle–Damgård
+- Notable: Dual independent parallel compression functions
 
-## Algorithm Steps
+## Usage
 
-1. Pad message to 512-bit blocks
-2. Initialize eight 32-bit working variables
-3. For each block, run 64 rounds using bitwise ops and modular math
-4. Concatenate output from internal state
+- Primary use today: Bitcoin address generation
+- Often used in conjunction with SHA-256 (e.g. hash160 = RIPEMD160(SHA256(x)))
 
-## Use Cases
-
-- Digital signatures
-- SSL/TLS
-- Bitcoin mining
-- File verification
+⚠️ While still used in crypto ecosystems, it’s considered outdated for modern security use.
 
 ---
 

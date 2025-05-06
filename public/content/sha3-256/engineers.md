@@ -1,28 +1,29 @@
-# SHA-256 for Engineers
+# SHA3-256 for Engineers
 
-SHA-256 is a member of the SHA-2 family, designed by the NSA and standardized by NIST.
+SHA3-256 is the 256-bit variant of the SHA-3 family based on the Keccak sponge construction.
 
-## Technical Specs
+## Technical Details
 
-- Output: 256-bit hash (32 bytes)
-- Block size: 512 bits
-- Construction: Merkle–Damgård using Davies–Meyer
-- Rounds: 64
-- Secure as of 2025
+- Output: 256-bit (32-byte)
+- State size: 1600 bits
+- Capacity: 512 bits
+- Rate: 1088 bits
+- Permutation rounds: 24 (Keccak-f)
+- Secure against length extension attacks
 
-## Algorithm Steps
+## How It Works
 
-1. Pad message to 512-bit blocks
-2. Initialize eight 32-bit working variables
-3. For each block, run 64 rounds using bitwise ops and modular math
-4. Concatenate output from internal state
+1. Pad input using multi-rate padding
+2. Absorb input blocks into the sponge state
+3. Permute the state using Keccak-f
+4. Squeeze output until desired length
 
-## Use Cases
+## Benefits
 
-- Digital signatures
-- SSL/TLS
-- Bitcoin mining
-- File verification
+- Higher internal security margin
+- Resistant to SHA-2-specific attacks
+- Simpler padding rules
+- Quantum-ready design
 
 ---
 
