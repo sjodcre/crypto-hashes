@@ -17,7 +17,7 @@ People use SHA-256 to lock up their secrets and check if anything changed withou
 |-------------|--------------------------------------|-----------|------------------------|
 | [SHA-256](/algo/sha256)     | Magic sticker maker ✨               | Fast      | Used everywhere! 🌍     |
 | [SHA3-256](/algo/sha3-256)    | Sponge that squeezes secrets 🧽      | Medium    | Super twisty inside! 🔄 |
-| BLAKE2b     | Rocket printer for codes 🚀          | Very Fast | Super fast and smart! 🧠 |
+| [BLAKE2b](/algo/blake2b)     | Rocket printer for codes 🚀          | Very Fast | Super fast and smart! 🧠 |
 | BLAKE3      | A robot with many arms 🤖            | Ultra Fast| Works super fast! ⚡    |
 | RIPEMD-160  | Pirate’s old secret map 🏴‍☠️         | Slower    | Used in Bitcoin! 🪙     |
 | Whirlpool   | A magic mixing pot 🌀                | Medium    | Makes huge codes! 📦    |

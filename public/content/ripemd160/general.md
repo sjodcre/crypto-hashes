@@ -16,7 +16,7 @@ While newer methods are faster and stronger, RIPEMD-160 is still in use for lega
 |-------------|--------|----------------|-----------|------------------------------------|
 | [SHA-256](/algo/sha256)     | 256-bit| Very Common    | Fast      | Internet, Bitcoin, security        |
 | [SHA3-256](/algo/sha3-256)    | 256-bit| Less Common    | Medium    | Future security systems            |
-| BLAKE2b     | Up to 512-bit | Common  | Very Fast | File tools, apps                   |
+| [BLAKE2b](/algo/blake2b)     | Up to 512-bit | Common  | Very Fast | File tools, apps                   |
 | BLAKE3      | 256-bit| New & Powerful | Ultra Fast| High-speed apps, future projects   |
 | RIPEMD-160  | 160-bit| Bitcoin only   | Slower    | Bitcoin address creation           |
 | Whirlpool   | 512-bit| Niche Use      | Medium    | Archiving, long-term checksums     |
