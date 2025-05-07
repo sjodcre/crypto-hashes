@@ -31,7 +31,7 @@ SHA3-256 is the 256-bit variant of the SHA-3 family based on the Keccak sponge c
 
 | Algorithm   | Output Bits | Structure        | Speed     | Application                     | Notes                          |
 |-------------|-------------|------------------|-----------|----------------------------------|--------------------------------|
-| SHA-256     | 256         | Merkle–Damgård   | Fast      | TLS, Blockchain, Git             | Widely adopted, solid          |
+| [SHA-256](/algo/sha256)     | 256         | Merkle–Damgård   | Fast      | TLS, Blockchain, Git             | Widely adopted, solid          |
 | SHA3-256    | 256         | Keccak Sponge    | Medium    | Post-quantum hashing             | Different math, newer standard |
 | BLAKE2b     | Up to 512   | HAIFA            | Very Fast | Password hashing, files          | ChaCha/Salsa-inspired          |
 | BLAKE3      | 256         | Merkle Tree      | Ultra Fast| Parallel systems, SIMD usage     | Modern, multithreaded support  |

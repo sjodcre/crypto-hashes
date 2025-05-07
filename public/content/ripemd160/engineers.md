@@ -22,7 +22,7 @@ RIPEMD-160 is a 160-bit hash function designed in 1996 as a strengthened version
 
 | Algorithm   | Output Bits | Structure        | Speed     | Application                     | Notes                          |
 |-------------|-------------|------------------|-----------|----------------------------------|--------------------------------|
-| SHA-256     | 256         | Merkle–Damgård   | Fast      | TLS, Blockchain, Git             | Widely adopted, solid          |
+| [SHA-256](/algo/sha256)     | 256         | Merkle–Damgård   | Fast      | TLS, Blockchain, Git             | Widely adopted, solid          |
 | SHA3-256    | 256         | Keccak Sponge    | Medium    | Post-quantum hashing             | Different math, newer standard |
 | BLAKE2b     | Up to 512   | HAIFA            | Very Fast | Password hashing, files          | ChaCha/Salsa-inspired          |
 | BLAKE3      | 256         | Merkle Tree      | Ultra Fast| Parallel systems, SIMD usage     | Modern, multithreaded support  |

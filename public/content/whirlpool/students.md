@@ -16,7 +16,7 @@ It’s great for **archiving**, **file integrity**, or **backups**.
 
 | Algorithm    | Output Size | Structure        | Speed     | Key Usage                          |
 |--------------|-------------|------------------|-----------|------------------------------------|
-| SHA-256      | 256 bits    | Merkle–Damgård   | Fast      | SSL, TLS, Bitcoin                  |
+| [SHA-256](/algo/sha256)      | 256 bits    | Merkle–Damgård   | Fast      | SSL, TLS, Bitcoin                  |
 | SHA3-256     | 256 bits    | Keccak Sponge    | Medium    | Post-quantum readiness             |
 | BLAKE2b      | Up to 512b  | HAIFA            | Very Fast | File hashing, modern replacement   |
 | BLAKE3       | 256 bits    | Merkle Tree      | Ultra Fast| Parallel, multithreaded apps       |
