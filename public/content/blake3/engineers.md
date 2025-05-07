@@ -30,7 +30,7 @@ BLAKE3 is a cryptographic hash function designed to be **faster** and more **par
 | Algorithm   | Output Bits | Structure        | Speed     | Application                     | Notes                          |
 |-------------|-------------|------------------|-----------|----------------------------------|--------------------------------|
 | [SHA-256](/algo/sha256)     | 256         | Merkle–Damgård   | Fast      | TLS, Blockchain, Git             | Widely adopted, solid          |
-| SHA3-256    | 256         | Keccak Sponge    | Medium    | Post-quantum hashing             | Different math, newer standard |
+| [SHA3-256](/algo/sha3-256)    | 256         | Keccak Sponge    | Medium    | Post-quantum hashing             | Different math, newer standard |
 | BLAKE2b     | Up to 512   | HAIFA            | Very Fast | Password hashing, files          | ChaCha/Salsa-inspired          |
 | BLAKE3      | 256         | Merkle Tree      | Ultra Fast| Parallel systems, SIMD usage     | Modern, multithreaded support  |
 | RIPEMD-160  | 160         | Dual-line MD     | Slow      | Bitcoin address hashing          | Mostly legacy, still relevant  |
